@@ -82,6 +82,13 @@ public:
    * ProcessMeasurement
    * @param meas_package The latest measurement data of either radar or laser
    */
+   
+  void Normalize(double *angle);
+  /**
+   * Normalize angle between PI and -PI
+   * @param *angle Angle to be normalized
+   */
+   
   void ProcessMeasurement(MeasurementPackage meas_package);
 
   /**
