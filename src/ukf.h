@@ -28,6 +28,16 @@ public:
   ///* state covariance matrix
   MatrixXd P_;
 
+  ///* process covariance matrix
+  MatrixXd Q_;
+  
+  ///* laser measurement matrix
+  MatrixXd H_laser_;
+
+  ///* measurement covariance matrices
+  MatrixXd R_laser_;
+  MatrixXd R_radar_;
+
   ///* predicted sigma points matrix
   MatrixXd Xsig_pred_;
 
